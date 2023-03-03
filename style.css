@@ -5,6 +5,7 @@
 * {
  margin: 0;
  padding: 0;
+ color: white;
 }
 
 body {
@@ -44,31 +45,37 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 5fr;
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
 }
 
 .sidebar {
-    background-color: rgb(0, 141, 206);
+    background-color: rgb(30, 28, 66);
     color: white;
     grid-area: 1 / 1 / 3 / 2;
+    border-right: 1px solid rgb(150, 150, 228);
 }
 
 .header {
-    background-color: rgb(231, 227, 227);
+    background-color: rgb(36, 34, 80);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
     z-index: 2;
     
 }
 
 .main-content-container {
-    background-color: rgb(231, 227, 227);
+    background-color: rgb(30, 29, 49);
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
 }
 
 /* ============= */
@@ -106,15 +113,27 @@ body {
     padding: 0 1rem 0 1rem;
 }
 
-.header .header-flex-container:nth-child(1) {
-    grid-area: 1 / 1 / 2 / 5;
+.user-info-container {
+    grid-area: 1 / 4 / 2 / 5;
 }
 
-.header .header-flex-container:nth-child(2) {
-    grid-area: 2 / 1 / 3 / 5;
+.header-greeting-container {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.watch-rune-ball-container {
+    grid-area: 2 / 2 / 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-btn-container {
+    grid-area: 2 / 4 / 3 / 5;
 }
 
 .header .search-bar-container {
+    grid-area: 1 / 2 / 2 / 4;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
@@ -132,7 +151,6 @@ body {
 }
 
 .header svg {
-    stroke: black;
     width: 1.25rem;
     height: 1.25rem;
 }
@@ -178,12 +196,166 @@ body {
 .header-btn-container button {
     width: 5rem;
     height: auto;
-    background-color: rgb(30, 187, 226);
+    background-color: rgb(150, 150, 228);
     border: none;
     padding: .5rem;
     border-radius: 150px;
     color: white;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
-    margin-right: 1.5rem;
+}
+
+.watch-rune-ball-container button {
+    flex: 1;
+    background-color: rgb(150, 150, 228);
+    border: none;
+    padding: .5rem;
+    border-radius: 150px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* ======================== */
+/* Main-content General CSS */
+/* ======================== */
+
+.player-container {
+    grid-area: 1 / 1 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.announcement-container {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.trending-user-container {
+    grid-area: 2 / 3 / 4 / 4
+}
+
+/* ============================= */
+/* Main-content Player Cards CSS */
+/* ============================= */
+
+.player-container > div:first-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.card-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+    background-color: rgb(36, 34, 80);
+    padding: 1rem;
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.336);
+}
+
+.card-container > h2, .card-container > p {
+    margin-bottom: .5rem; 
+}
+
+.card-container > div {
+    align-self: flex-end;
+}
+
+.card-container h2 {
+    color: rgb(253, 207, 89);
+}
+
+.card-container svg {
+    stroke: white;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* ============================== */
+/* Main-content announcements + user-containers CSS */
+/* ============================== */
+
+.announcement-container div, .trending-user-container div  {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.announcement-container > div:first-child, .trending-user-container > div:first-child {
+    margin-bottom: .5rem;
+}
+
+.event-container, .user-container {
+    background-color: rgb(150, 150, 228);
+    border-radius: 9px;
+}
+
+.event-container h3, .user-container h3 {
+    font-size: 1rem;
+}
+
+.event-container p, .user-container p {
+    font-size: .75rem;
+    font-weight: 400;
+    letter-spacing: .1px;
+}
+
+.event-container div {
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.event-container div:not(:last-child):before {
+    content: "";
+    position: absolute;
+    left    : 1rem;
+    bottom  : 0;
+    height  : 1px;
+    width   : 75%;
+    border-bottom: 1px solid black;
+}
+
+/* ============================== */
+/* Main-content trending CSS */
+/* ============================== */
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-container div {
+    padding: .25rem .5rem .25rem .5rem;
+    margin: .25rem 0;
+}
+
+.trending-user-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.trending-user-grid-container div {
+    grid-area: 1 / 1 / 3 / 2;
+    align-self: center;
+}
+
+.trending-user-grid-container h3 {
+    grid-area: 1 / 2 / 2 / 4;
+    align-self: end;
+}
+
+.trending-user-grid-container p {
+    grid-area: 2 / 2 / 3 / 4;
+    align-self: start;
 }
