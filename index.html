@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>RuneballHub Dashboard</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +15,12 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="icon-container">
+            <div class="icon-container title-container">
                 <svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25" />
                   </svg>
                   
-                <h2>Runeball Hub</h2>
+                <h2>RuneballHub</h2>
             </div>
             <div class="icon-container">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -66,31 +66,37 @@
                   </svg>
                   
                 
-                <p>Communities</p></div>
-            <div class="icon-container">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  
-
-                <p>Settings</p>
+                <p>Communities</p>
             </div>
-            <div class="icon-container">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
-                  </svg>
-                  
+            
+            <div class="settings-support-privacy-container">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
                 
-                <p>Support</p>
+    
+                    <p>Settings</p>
+                </div>
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                      </svg>
+                      
+                    
+                    <p>Support</p>
+                </div>
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                      </svg>
+                      
+                    <p>Privacy</p>
+                </div>
             </div>
-            <div class="icon-container">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-                  </svg>
-                  
-                <p>Privacy</p>
-            </div>
+            
+            
         </div>
 
         <div class="header">
@@ -136,10 +142,14 @@
 
         <div class="main-content-container">
             <div class="player-container">
-                <div>Your projects</div>
+                <div>Top Players</div>
 
                 <div class="card-grid-container">
                     <div class="card-container">
+                        <div class="player-picture-container">
+                            <img src="./media/2241-battle-mage-angus-of-mu-nobg.png" alt="Picture of Runeball player.">
+                        </div>     
+                        
                         <h2>Angus of Mu</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At est sapiente eveniet illo quaerat expedita natus nam delectus ipsam, laudantium odit accusamus quis minus voluptatibus esse asperiores cumque, blanditiis adipisci.</p>
                         <div class="icon-container">
@@ -163,7 +173,12 @@
                         </div>
                     </div>
                     <div class="card-container">
-                        <h2>Panico</h2>
+                        
+                        <div class="player-picture-container">
+                            <img src="./media/6287-magus-wazir-of-the-mount-nobg.png" alt="Picture of Runeball player.">
+                        </div> 
+
+                        <h2>Magus Wazir</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad eius, aliquam perspiciatis dicta minima pariatur inventore, ipsa temporibus rerum qui fugit quidem. Quaerat amet officiis iste velit expedita nobis totam.</p>
                         <div class="icon-container">
                             <div>
@@ -186,7 +201,12 @@
                         </div>
                     </div>
                     <div class="card-container">
-                        <h2>Jitcy</h2>
+                        
+                        <div class="player-picture-container">
+                            <img src="./media/1111-archmagus-lumos-in-the-shadows-nobg.png" alt="Picture of Runeball player.">
+                        </div> 
+
+                        <h2>Archmagus Lumos</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae quae, harum corporis suscipit iure quia temporibus iusto repellat. Autem quidem quasi magni sapiente eaque quaerat necessitatibus ratione, eius ab!</p>
                         <div class="icon-container">
                             <div>
@@ -209,7 +229,12 @@
                         </div>
                     </div>
                     <div class="card-container">
-                        <h2>Nard</h2>
+                        
+                        <div class="player-picture-container">
+                            <img src="./media/2402-pyromancer-artis-of-the-rock-nobg.png" alt="Picture of Runeball player.">
+                        </div> 
+                        
+                        <h2>Pyromancer Artis of the Rock</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae distinctio, consequatur itaque ratione possimus culpa doloremque aliquid quas, dignissimos at voluptas, voluptatem quae voluptatibus ut enim amet? Nostrum, ducimus blanditiis?</p>
                         <div class="icon-container">
                             <div>
@@ -232,7 +257,12 @@
                         </div>
                     </div>
                     <div class="card-container">
-                        <h2>Magus Wazir</h2>
+                        
+                        <div class="player-picture-container">
+                            <img src="./media/2820-hardwin-punisher-of-ruffians-nobg.png" alt="Picture of Runeball player.">
+                        </div> 
+
+                        <h2>Hardwin Punisher of Ruffians</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quisquam error suscipit! Error, ipsam neque ad aliquid facere, nihil deleniti illo natus corporis animi fuga aut distinctio, doloribus enim reiciendis?</p>
                         <div class="icon-container">
                             <div>
@@ -255,7 +285,12 @@
                         </div>
                     </div>
                     <div class="card-container">
-                        <h2>Slimh22</h2>
+                        
+                        <div class="player-picture-container">
+                            <img src="./media/1529-artificer-numpty-of-the-mount-nobg.png" alt="Picture of Runeball player.">
+                        </div> 
+
+                        <h2>Artificer Numpty of the Mount</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum ad minima suscipit? Animi corrupti quasi optio recusandae, laudantium fuga, in impedit explicabo similique cupiditate atque perspiciatis, esse eaque repudiandae.</p>
                         <div class="icon-container">
                             <div>
@@ -283,11 +318,11 @@
                 <div>Announcements</div>
                 <div class="event-container">
                     <div>
-                        <h3>Angus of Mu Traded!</h3>
+                        <h3>Angus of Mu Traded</h3>
                         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ex nemo nesciunt ducimus possimus obcaecati. Perspiciatis, veritatis sapiente nostrum adipisci asperiores incidunt quod dolorem placeat accusamus molestiae ea et rem?</p>
                     </div>
                     <div>
-                        <h3>Brown Beards Sponsered by Manscape</h3>
+                        <h3>Brown Beards Sponsored by Manscape</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate fugiat autem dolore tempore, rem a molestias praesentium vero inventore mollitia aut, placeat culpa. Enim, odio obcaecati placeat laboriosam iure rerum.</p>
                     </div>
                     <div>
